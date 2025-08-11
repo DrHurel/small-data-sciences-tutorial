@@ -17,8 +17,8 @@ sudo apt install git
 
 clone the repository
 ```bash
-git clone https://github.com/yourusername/yourrepository.git
-cd yourrepository
+git clone https://github.com/DrHurel/small-data-sciences-tutorial.git
+cd small-data-sciences-tutorial
 ```
 
 execute the setup script
