@@ -1,5 +1,10 @@
+import math
 import matplotlib.pyplot as plt
 import pandas as pd
+
+
+def example(x : int |float) -> float:
+    return math.fabs(x)
 
 def main():
     print("This is the main function of the script.")
@@ -72,7 +77,15 @@ def main():
     print(f"- Day/Night distribution: {df['day_night'].value_counts().to_dict()}")
     print(f"- Anomalies detected: {df['anomaly'].sum()}")
 
-    
+
+    # Add a field from a function transformation
+
+    df['new_field'] = df['value'].apply(lambda x: x * 2)
+    df['new_field_function'] = df['value'].apply(example)  # Example transformation function
+
+    print("\nDataFrame after adding new fields:")
+    print(df[['new_field', 'new_field_function']].head())
+
 
 if __name__ == "__main__":
     main()

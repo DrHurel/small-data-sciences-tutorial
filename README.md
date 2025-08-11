@@ -31,3 +31,10 @@ run the application
 ./Devtools/run.sh
 ```
 
+# TODO
+
+Add your own data in the assets folder,
+
+create a dataframe with your data and visualize it using matplotlib.
+
+Base on the example add a new field to the dataframe and visualize it.
